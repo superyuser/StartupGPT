@@ -10,7 +10,7 @@ import os
 import nltk
 import argparse
 
-load_dotenv(dotenv_path=r"C:\Users\Bubble\Desktop\0000 Sping break\springDay1\.env")
+load_dotenv()
 print(f"API key is: {os.getenv('OPENAI_API_KEY')}")
 
 nltk.download('averaged_perceptron_tagger_eng')

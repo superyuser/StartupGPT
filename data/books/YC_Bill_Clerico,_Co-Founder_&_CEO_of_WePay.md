@@ -1,0 +1,1 @@
+The Social Radars (Jessica Livingston and Carolynn Levy) talk with Bill Clerico, co-founder and CEO of WePay, about starting one of first examples of what we now call a “FinTech” startup and selling it to J.P. Morgan for $400M.

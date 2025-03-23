@@ -1,0 +1,1 @@
+In this episode of The Social Radars, Jessica Livingston and Carolynn Levy talk to Twitch co-founder Emmett Shear about “how Twitch grew from Justin Kan walking around with a camera on his head to one of the biggest communities on the internet.”

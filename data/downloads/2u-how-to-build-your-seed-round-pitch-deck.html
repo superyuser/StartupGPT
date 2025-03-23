@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en"><head><title>How to build your seed round pitch deck  : YC Startup Library | Y Combinator</title><meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="mFJE86wvayqLICqDvRiY7vgl-QoOYyZG85y4Q1i-ctC1AVGnF-RKE7GxP50maa_PrjE0sUt57KRP6zTmvuqEHg" /><meta charset="utf-8" /><meta content="IE=edge;chrome=1" http-equiv="X-UA-Compatible" /><script nonce="ND+/mjdNWl/tsUGrfVyv5w==">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-51714649-1', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+function parseUrl(url){
+  var a = document.createElement('a');
+  a.href = url;
+  return {
+    href: a.href,
+    host: a.host || location.host,
+    port: ('0' === a.port || '' === a.port) ? port(a.protocol) : a.port,
+    hash: a.hash,
+    hostname: a.hostname || location.hostname,
+    pathname: a.pathname.charAt(0) != '/' ? '/' + a.pathname : a.pathname,
+    protocol: !a.protocol || ':' == a.protocol ? location.protocol : a.protocol,
+    search: a.search,
+    query: a.search.slice(1)
+  };
+};
+
+function canonical() {
+  var tags = document.getElementsByTagName('link');
+  for (var i = 0, tag; tag = tags[i]; i++) {
+    if (tag.getAttribute('rel') === 'canonical') {
+      return tag.getAttribute('href');
+    }
+  }
+}
+
+function canonicalPath() {
+  var canon = canonical();
+  if (!canon) return window.location.pathname;
+  return parseUrl(canon).pathname;
+}
+
+function canonicalUrl(search) {
+  var canon = canonical();
+  if (canon) return canon.indexOf('?') !== -1 ? canon : canon + search;
+  var url = window.location.href;
+  var i = url.indexOf('#');
+  return i === -1 ? url : url.slice(0, i);
+}</script><meta content="summary_large_image" name="twitter:card" /><meta content="@ycombinator" name="twitter:site" /><meta content="https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg" name="twitter:image" /><meta content="initial-scale=1, width=device-width, height=device-height" name="viewport" /><meta content="follow" name="robots" /><meta content="How to build your seed round pitch deck  : YC Startup Library" name="title" /><meta content="Y Combinator has helped thousands of founders create pitch decks for their seed round fundraising. Here is the YC seed deck template that works." name="description" /><meta content="https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg" name="image" /><meta content="YC Startup Library" name="site_name" /><meta content="website" property="og:type" /><meta content="en_US" property="og:locale" /><meta content="YC Startup Library" property="og:site_name" /><meta content="How to build your seed round pitch deck  : YC Startup Library | Y Combinator" property="og:title" /><meta content="https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg" property="og:image" /><meta content="https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg" property="og:image:url" /><meta content="https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg" property="og:image:secure_url" /><meta content="https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck" property="og:url" /><meta content="Y Combinator has helped thousands of founders create pitch decks for their seed round fundraising. Here is the YC seed deck template that works." property="og:description" /><meta content="23YLYcfP-tmEiWdemh9h6Wi6DIxisMtUtcowUJBSvH0" property="google-site-verification" /><link href="https://bookface-static.ycombinator.com/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico" rel="icon" type="image/x-icon" /><link href="https://bookface-static.ycombinator.com/assets/ycdc/favicon-c8a914eeeba9fe6f7a863b35608b55aeedd7c1ff409c97b9ecb96b7a6c278d70.ico" rel="shortcut icon" type="image/x-icon" /><link href="https://www.ycombinator.com/blog/feed" rel="alternate" type="application/rss+xml" /><link href="https://plus.google.com/113116812547402050884" rel="publisher" /><script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC0BuJ43Ncbmuro17vVxWJWrOzzAPZ0rQE&libraries=places&language=en' async defer></script><script nonce="ND+/mjdNWl/tsUGrfVyv5w==">window.process = {
+  cwd: () => "/",
+  env: {},
+};
+window.AlgoliaOpts = {"app":"45BWZJ1SGC","key":"Mjk0MTY4ODc3YmI5MzU1NjU1ZDZjN2M3OGZmYWQwZTVmMDRlYWI3NzIxZDY3MTVkZWFiY2JlZmM4ZWM5NWI2YnJlc3RyaWN0SW5kaWNlcz1BcnRpY2xlX3Byb2R1Y3Rpb24mdGFnRmlsdGVycz0lNUIlMjJ5Y2RjX3B1YmxpYyUyMiUyQyU1QiUyMmtiX3Jvb3RfMTc2JTIyJTVEJTVEJmFuYWx5dGljc1RhZ3M9JTVCJTIyeWNkYyUyMiU1RA=="};
+window.RAILS_ENV = 'production';</script><script src="https://bookface-static.ycombinator.com/vite/assets/ycdc-new-4h-1TdOW.js" crossorigin="anonymous" type="module"></script><link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ycdc-styles-CXDRgtNS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/IndexPage-CPt1TvFJ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ShowPage-Dpc3eQjB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/BlackFoundersPage-C_je2ezU.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LatinxFoundersPage-DmkQINn3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/WomenFoundersPage-CETfckoU.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/TopCompaniesPage-BDDrZpXY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/FoundersPage-xK-D14d0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyListPage-Bna3SEHr.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/core.browser.esm-DBhkASqY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Bjr9VeMW.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index.es-pKg-UU5a.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/withRailsContext-BsOal37W.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Section-BWmpyzyZ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ResponsiveProse-DcR3CUzk.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyProfileTw-BvKYUCru.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_commonjsHelpers-BosuxZz1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/interopRequireDefault-hdRfAAZY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/createSvgIcon-YVM47kw0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/authorizedFetch-UniaKR0H.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/renderMarkdown-BDBCIU_O.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/TableOfContents-DqufboNT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-DNCvFDQQ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-9j6KVIvN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-2-m5wM5i.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Button-D8f7K359.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/useFocusedElement-wmMABskN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-uSw9VvEd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ycombinator-logo-CsFFMZDD.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/differenceInYears-CJ_hguVe.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/formatDistanceToNowStrict-CkzpBvLN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesIndexPage-B42EXewN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesShowPage-B5DOHjhd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesFormPage-DVSlm999.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesStatsPage-Dg7ze1UA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ContentWithMedia-0859-YLB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/HorizontalLinks-D76wgO65.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/FeaturedPost-B_i1-2f1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/classNames-CN4lTu6a.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/PageTitle-B1r_VEdX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ProgramFAQPage-BPSf8BqV.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ProgramWhatHappensPage-qqQpxc8o.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ApplyPage-DxWVvnPZ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ApplyReminderPage-CcgM6zWT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/SectionTitle-BSxLjYLD.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LegalPage-Ch9twnMP.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/RfsPage-CHvcMV5E.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/GhostContent-rc3ZW1on.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/DemodayFaqPage-BoqW9BzM.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/PeoplePage-BrWhwa8x.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/InterviewsPage-DzXqrbbN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/WaasJobPostingsFooter-gZgY93K-.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/InfoBox-DNpanPzT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/DirectApplyModal-MSWhEA9f.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/useMediaQuery-D2EEIdoE.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/formik.esm-D_GjhUht.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyModel-CJNEM6QB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/transition-CRrdIfn9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/BlogPage-BVvula61.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/BlogList-DCrMXChq.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/SharedDirectory-g4IizBYG.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/DisjunctiveFacet-D80jNBwE.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/algoliaInsights-DUhm4jFW.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/striptags-CKKu1MF_.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/styles.module-B9UD8XrS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Ct2QzbmH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/YcdcCompanyDirectory-CU8clWG0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyListItemContent-B7NCVVWm.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/lodash-BaWm0kzi.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanySizeChoices-h5iPbGvR.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Pills-8uIqXhi_.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-3ZpU7nbN.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/DoubleSliderFacet-ScbducpF.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/InfoIconTooltip-CyBpYW_b.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Tooltip-BkKFru7-.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/floating-ui.dom-BtkhkZIX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-C9T_OsH9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-cIyYH0z9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/v4-SoommWqA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/bundle-mjs-BNYwEHuQ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/XIcon-CncUNjtj.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ChevronDownIcon-B3Dx3bf2.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/use-root-containers-BswTM8MV.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-D7R8_Bo3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index.esm-D_REyXEx.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/cjs-DMmwEoUs.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CpEsc6A5.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/___vite-browser-external_commonjs-proxy-DRaEfepn.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/algoliasearch-B4rcbc_d.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_commonjs-dynamic-modules-TDtrdbi3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Chjiymov.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-1r-HuIfP.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/QueryStringUtils-BnqGyoEy.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseGet-BcNGC96k.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isSymbol-B8Pdfa-7.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseIteratee-BFGwFmBj.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/identity-8Ezuc4mB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/get-D4eN-cjS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_basePickBy-YzWyGNOv.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseSet-Dpu-Mij2.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseAssignValue-CkmUuoA6.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_defineProperty-DuYznukG.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_getPrototype-DAwmmqHM.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ThrottledInfiniteScroll-C_CH0md-.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/InfiniteScroll-cYptAzUb.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/throttle-D8cvT2-b.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/debounce-D_jClmLb.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/util-DWM6cO-r.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/rruleset-BywWQN1s.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/tslib.es6-CMwweBXX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/mande-58egg929.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CRdwx0oD.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/orderBy-Doweu5QY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseOrderBy-BOw2zNH-.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/cn-D_YfEM9I.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/InlineLoader-DWrCWME4.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/exports-BEozUsJu.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Breadcrumb-D93d6uvk.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/react-router-dom-bfdj_Ejs.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/inheritsLoose-1HkgTRWY.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/setPrototypeOf-DgZC2w_0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/history-DnpDoCW8.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/extends-CCbyfPlC.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/tiny-invariant-BaFNuDhB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-z_V95vGa.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CnyDuYXe.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/objectWithoutPropertiesLoose-1QL-frMM.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/hoist-non-react-statics.cjs-e4ByCA4P.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Pill-CK4ec9W1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/YcIconSvg-DFKxDDCJ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesShared-W7Z--DOP.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/TimeAgo-CPDpKLEb.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Epn7o-fd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/moment-DUineI7U.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-RSX4MQFP.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CopyToClipboard-BeWYCol_.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/dialog-Ct9b4Dal.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_UnderrepresentedFoundersPage-B7Wg5JFH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Bz39Q8om.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-Ck13UsPr.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ResizeObserver.es-Vp3fAUIx.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Card-C2cQ4eFC.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Avatar-CdMkjpD2.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CCk_IRZy.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-C1gVAwtH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-DDeaxJjr.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/DropdownMenu-D1ZSPIbG.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-BTKMVr3A.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/floating-ui.react-dom-BVGj85m8.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-C-Z93AgS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/createLucideIcon-zTx0t6Zt.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/circle-BHe_2GXk.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyBubbles-D08NfnKt.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/transform-C4sfVJI4.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/string-CFFdVFMV.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/range-OtVwhkKS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-DKKElNa6.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/YCAlerts-jKI5iTSH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/YCComponentContext-Bi1Xv7P_.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CyiIW7IA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/v4-VeJOmXwa.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/v4-B-3x3LyO.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ChevronRightIcon-BVYsWLQp.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/regex-BtFmPiye.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/debounce--2cpdP7V.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-8C2iCMeh.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/utils-Bf5s6MWA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isEmail-DECbSZpA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isEmail-DVrdNF7M.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/preload-helper-CnIRovmK.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/memoize-one.esm-DhmFm5Lm.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-B1JdJRAd.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/CompanyProfileSocials-l3ppL2m1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/withStyles-D15rxn_1.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/objectWithoutProperties-ChfEdCc0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/defineProperty-YVtsfyGa.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/assertThisInitialized-DYA3nViS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/useForkRef-CZNkdavl.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/createSvgIcon-DPXPSeZp.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/format-vf3rU4Ni.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/toDate-Biia9zZS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/getRoundingMethod-DzQkuXNU.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-D7awuwec.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/addMinutes-B_jsQ_8w.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isAfter-CQdO3mIa.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isSameYear-BRzW4ngw.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/subDays-BjOjtkzu.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/subMonths-Bq4lT14G.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isSameDay-BJFAOvBH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isBefore-Ahq3ioqX.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/parseISO-BrPsYOlT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-BGawB9KZ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/popper-DzOHQG4g.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/algoliasearch-lite.umd-90X0qt5R.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesPage-0MPDTLnB.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Helmet-CfRIek0c.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/MarkdownEditor-DChq13M0.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/markdown-D87UFdng.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Toast-MDBr6Hfc.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CBImXfns.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/algoliaClient-BHuEHzwl.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/module-m0JlzPle.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/upload-IT78Hzrj.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Tabs-cATPe8dJ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Stats-cFGP62OJ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Tabs-rolIKb97.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-D76gQeEu.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CIZaU-Qk.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-DsRuOMGf.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-BgwMKE93.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-CueLOdRe.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/index-BEJBP7kH.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/generateCategoricalChart-CnkGj8E9.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/sortBy-Bw8vyIe_.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_setToString-Ayy5NWRi.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/toInteger-D_1xA-RQ.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/get-DlBtk-_f.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/mapValues-DaJ116E3.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/upperFirst-HGqw2gDS.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/_baseSlice-DkFNCYmM.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isEqual-D5_ptBJI.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/last-oQFn8hUT.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/isPlainObject-BnRaMSNa.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/immutable.es-DtP_M4Lt.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/ChevronRightIcon-4AxP5baG.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/SearchIcon-C8iUNFEl.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/unleash-react-DEBm6gp8.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/Layout-DETg7IiA.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/QueryClientProvider-C99QyZBe.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/queryClient-CoaQrB-e.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/mutation-5bfmlNEI.js" as="script" crossorigin="anonymous">
+<link rel="modulepreload" href="https://bookface-static.ycombinator.com/vite/assets/utils-BKrstCcm.js" as="script" crossorigin="anonymous"><link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/Launches-PFeFtpkK.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesFormPage-DIwtZREJ.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesIndexPage-Czh_VQfj.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesPage-CHh592ED.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/LaunchesShowPage-r0_GBVMe.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/WhyPage-DFDzpL99.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/Breadcrumb-DX7nwiVd.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/nouislider-v_DV34yi.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/editor-C75NZIee.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/history-BY5Jnflb.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/Dropdown-CrwX-3I6.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/index-CndHIVUr.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/ApplyBanner-Bc3weZge.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/react-datepicker-CBf8Kkyg.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/ycdc-styles-XEVIpRHY.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/CompanyProfileTw-BXSwrBlJ.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/styles-BHWl_BAL.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/DoubleSliderFacet-C3kMkH91.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/YCAlerts-DB0y2Ch-.css" media="screen" />
+<link rel="stylesheet" href="https://bookface-static.ycombinator.com/vite/assets/markdown-DnaQHp1k.css" media="screen" /><script src="https://bookface-static.ycombinator.com/assets/blog-54db898b518e809d1aaeaacf7e7cc20fa35375fb3348fc2b56cea781f5cdfa55.js" defer="defer"></script><link href="https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck" rel="canonical" /><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" /></head><body class="retro ycdc2 articles show"><div data-page="{&quot;component&quot;:&quot;ArticlesLibraryShowPage&quot;,&quot;props&quot;:{&quot;article&quot;:{&quot;id&quot;:180,&quot;slug&quot;:&quot;2u-how-to-build-your-seed-round-pitch-deck&quot;,&quot;title&quot;:&quot;How to build your seed round pitch deck&quot;,&quot;content&quot;:&quot;Demo Day for our Winter 2018 batch is a week from today. We’re largely focused on preparing companies for their on-stage\npresentations, but are also working with them on slightly longer decks to use in follow-up conversations with investors.\n\n[I’ve written about pitching before](http://www.aaronkharris.com/advice-on-pitching), and realized that what we were\nmissing was a clear template for how founders should lay out their stories through slides. The deck below is a template\nfor how I think companies should build seed decks. While the main target for this template is a company raising its seed\nround, the deck is not all that different from best practices for a Series A deck - which we’ll release next.\n\nThe key point to remember here is that founders should strive for clarity and concision. This is not the right place to\nwrite a treatise on your market or world philosophy. The simple truth is that there isn’t very much meaningful detail to\nexplore for most seed stage companies. When founders pretend that there is, their stories get muddled, and the investors\nget lost.\n\nFocus on narrative. The rest is commentary. (see footnote)\n\n![template-3](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-2.jpeg)\n\nThis is the title page. It has the name of your company, and a one line description of what you do.\n\nThis is the only place in the deck where you can only have 1 slide for what you need to show. Any of the other slides in\nthis deck should be treated as a first slide of a set. If you can keep the set to n=1, that’s ideal, but if you need\nmore, that’s ok. You probably don’t want any set here where n \\\u003e 3. This is a seed deck, remember.\n\n![template-4](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-3.jpeg)\n\nThis is where you clearly state the problem. Particulars of how this problem impacts real world people/businesses are\nvaluable.\n\n![template-5](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-4.jpeg)\n\nThis is the solution. You want to explain what you do very clearly, in as few words as possible. Describe the concrete\nbenefits you provide\n\n![template-6](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-5.jpeg)\n\nShow off your traction (if you have it). Make the numbers clear and meaningful. It’s unlikely your curve will be this\nsmooth. That’s ok.\n\nAdd some context next to the chart if you’ve got some great stats you want to add.\n\n![template-7](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-6.jpeg)\n\nGot more metrics? Awesome\\! Add them\\!\n\nTrick slide\\! Revenue would be better here, but this is ok.\n\n![template-8](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-7.jpeg)\n\nTell the investor what makes you so special, what makes this work, what your insights are. This might take more than one\nslide.\n\n![template-9](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-8.jpeg)\n\nBusiness model is important. You probably don’t know all the details yet, but you should know a lot of them. Lay it out.\nIf you need more space to dig into something complicated, add slides.\n\n![template-10](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-9.jpeg)\n\nWhat’s the market here? Is it going to be big? Will you make it big? How much money are you going to make off this\nthing? Convince the investor that they’re going to make lots of money with you\n\n![template-11](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-10.jpeg)\n\nTeam\\! So important at seed. Talk about what makes your team particularly well suited to the problem. This should be\nabout founders. Nobody cares about your advisors.\n\n![template-12](https://blog.ycombinator.com/wp-content/uploads/2018/03/YC-seed-deck-template-11.jpeg)\n\nTell the investor how much money you need, and what it gets you. If you can lay out where you’ll be inside of a year,\nwhich should make you Series A ready, that’s powerful\n\n-----\n\nfootnote: This deck is intentionally simple in design. Kevin Hale wrote a great piece about [how to design decks\nwell](https://www.ycombinator.com/library/4T-how-to-design-a-better-pitch-deck).\n\n-----\n\n*Thanks to Jared Friedman for suggesting that we put this together, and for reviewing it.*\n&quot;,&quot;ranking&quot;:7,&quot;root_id&quot;:176,&quot;author&quot;:&quot;Aaron Harris&quot;,&quot;authors&quot;:[],&quot;description&quot;:&quot;Y Combinator has helped thousands of founders create pitch decks for their seed round fundraising. Here is the YC seed deck template that works.&quot;,&quot;sus_curriculum&quot;:false,&quot;link&quot;:null,&quot;transcript&quot;:null,&quot;slides&quot;:null,&quot;categories&quot;:[&quot;Fundraising + Investors -\u003e Fundraising&quot;,&quot;Fundraising + Investors -\u003e Pitch Deck&quot;,&quot;Fundraising + Investors -\u003e Seed Round&quot;],&quot;categories_for_display&quot;:[&quot;Fundraising&quot;,&quot;Pitch Deck&quot;,&quot;Seed Round&quot;],&quot;feature_score&quot;:950,&quot;youtube_id&quot;:null,&quot;youtube_view_count&quot;:null,&quot;spotify_id&quot;:null,&quot;carousel_sort_order&quot;:null,&quot;created_at&quot;:&quot;2020-06-04T18:33:30.188Z&quot;,&quot;video_chapters&quot;:null,&quot;video_duration&quot;:null,&quot;cover_photo&quot;:null,&quot;cover_photo_thumbnail&quot;:null,&quot;series_name&quot;:null,&quot;bookmarked&quot;:null,&quot;video_progress_seconds&quot;:null,&quot;title_in_thumbnail&quot;:false},&quot;editUrl&quot;:null,&quot;relatedArticles&quot;:[{&quot;id&quot;:490,&quot;slug&quot;:&quot;7u-how-pitching-investors-is-different-than-pitching-customers&quot;,&quot;title&quot;:&quot;How pitching investors is different than pitching customers&quot;,&quot;youtube_id&quot;:&quot;pQnOBHNKlgs&quot;,&quot;spotify_id&quot;:null,&quot;author&quot;:&quot;Michael Seibel&quot;,&quot;description&quot;:&quot;Pitching your startup to customers is different than pitching to investors. Y Combinator Group Partner Michael Seibel shares how you can craft your message for each audience and when to use them in your conversations.&quot;,&quot;cover_photo&quot;:null,&quot;title_in_thumbnail&quot;:true,&quot;youtube_view_count&quot;:102086,&quot;video_duration&quot;:380,&quot;video_progress_seconds&quot;:null,&quot;created_at&quot;:&quot;2019-03-14T15:34:55.000Z&quot;},{&quot;id&quot;:261,&quot;slug&quot;:&quot;4D-yc-s-essential-startup-advice&quot;,&quot;title&quot;:&quot;YC&#39;s essential startup advice&quot;,&quot;youtube_id&quot;:null,&quot;spotify_id&quot;:null,&quot;author&quot;:&quot;Geoff Ralston, Michael Seibel&quot;,&quot;description&quot;:&quot;Here is what we, at YC, consider the most important, most transformative advice for startups.&quot;,&quot;cover_photo&quot;:null,&quot;title_in_thumbnail&quot;:true,&quot;youtube_view_count&quot;:null,&quot;video_duration&quot;:null,&quot;video_progress_seconds&quot;:null,&quot;created_at&quot;:&quot;2020-06-09T01:07:16.711Z&quot;},{&quot;id&quot;:258,&quot;slug&quot;:&quot;4A-a-guide-to-seed-fundraising&quot;,&quot;title&quot;:&quot;A guide to seed fundraising&quot;,&quot;youtube_id&quot;:null,&quot;spotify_id&quot;:null,&quot;author&quot;:&quot;Geoff Ralston&quot;,&quot;description&quot;:&quot;The most comprehensive guide on why, when, and how to raise money for your startup.&quot;,&quot;cover_photo&quot;:null,&quot;title_in_thumbnail&quot;:true,&quot;youtube_view_count&quot;:null,&quot;video_duration&quot;:null,&quot;video_progress_seconds&quot;:null,&quot;created_at&quot;:&quot;2020-06-09T00:59:55.211Z&quot;},{&quot;id&quot;:277,&quot;slug&quot;:&quot;4T-how-to-design-a-better-pitch-deck&quot;,&quot;title&quot;:&quot;How to design a better pitch deck&quot;,&quot;youtube_id&quot;:null,&quot;spotify_id&quot;:null,&quot;author&quot;:&quot;Kevin Hale&quot;,&quot;description&quot;:&quot;Investors invest in teams not slides. Your slides should make your ideas more clear. Here are design principles to follow when creating your pitch deck and story.&quot;,&quot;cover_photo&quot;:null,&quot;title_in_thumbnail&quot;:false,&quot;youtube_view_count&quot;:null,&quot;video_duration&quot;:null,&quot;video_progress_seconds&quot;:null,&quot;created_at&quot;:&quot;2020-06-09T01:36:01.221Z&quot;}],&quot;nextArticle&quot;:null,&quot;carouselName&quot;:null,&quot;videoProgressSeconds&quot;:null,&quot;userSignedIn&quot;:false},&quot;url&quot;:&quot;/library/2u-how-to-build-your-seed-round-pitch-deck&quot;,&quot;version&quot;:&quot;830cb0b0599dfd93181babc8cdc3ffd5c7556865&quot;,&quot;encryptHistory&quot;:false,&quot;clearHistory&quot;:false,&quot;rails_context&quot;:{&quot;railsEnv&quot;:&quot;production&quot;,&quot;inMailer&quot;:false,&quot;i18nLocale&quot;:&quot;en&quot;,&quot;i18nDefaultLocale&quot;:&quot;en&quot;,&quot;href&quot;:&quot;https://www.ycombinator.com/library/2u-how-to-build-your-seed-round-pitch-deck&quot;,&quot;location&quot;:&quot;/library/2u-how-to-build-your-seed-round-pitch-deck&quot;,&quot;scheme&quot;:&quot;https&quot;,&quot;host&quot;:&quot;www.ycombinator.com&quot;,&quot;port&quot;:null,&quot;pathname&quot;:&quot;/library/2u-how-to-build-your-seed-round-pitch-deck&quot;,&quot;search&quot;:null,&quot;httpAcceptLanguage&quot;:null,&quot;applyBatchLong&quot;:&quot;Spring 2025&quot;,&quot;applyBatchShort&quot;:&quot;X2025&quot;,&quot;applyDeadlineShort&quot;:&quot;February 11&quot;,&quot;ycdcRetroMode&quot;:true,&quot;currentUser&quot;:null,&quot;serverSide&quot;:false},&quot;id&quot;:&quot;ArticlesLibraryShowPage-react-component-3eac06b5-74f0-4ef5-a253-17efc50867be&quot;,&quot;server_side&quot;:false}" data-reactroot="" id="ArticlesLibraryShowPage-react-component-3eac06b5-74f0-4ef5-a253-17efc50867be"></div></body></html>

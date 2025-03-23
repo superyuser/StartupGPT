@@ -1,0 +1,1 @@
+In this episode of The Social Radars, Jessica Livingston and Carolynn Levy talk to Edith Elliot, cofounder of the non-profit startup Noora Health. Tune in to find out how “what started as a graduate school project turned into an organization that has changed the world.”

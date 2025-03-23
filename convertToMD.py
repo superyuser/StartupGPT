@@ -42,7 +42,8 @@ def htmlToMD(html_path):
     text = soup.get_text()
     return text
 
-def pdfToMD(url):
+# main
+def linkToMD(url):
     filetype, tag, target = download(url)
     print(f"downloaded pdf to {target}!")
     text = None
@@ -54,6 +55,8 @@ def pdfToMD(url):
         print("filetype unsupported, skipping!")
         return
     want_tag = input("Enter filename: ")
+    if not want_tag:
+        want_tag = tag
     final_path = f"{TARGET_DIR}/{want_tag}.md"
     with open(final_path, "w", encoding="utf-8") as f:
         f.write(text)
@@ -65,7 +68,7 @@ def main():
         want_url = input("Enter url of pdf to download: ")
         if want_url == "q":
             break
-        pdfToMD(want_url)
+        linkToMD(want_url)
         num_downloaded += 1
     print(f"saved {num_downloaded} to {TARGET_DIR}!")
 
