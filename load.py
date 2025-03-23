@@ -2,14 +2,17 @@ from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores.chroma import Chroma
 from langchain.embeddings import OpenAIEmbeddings
+from dotenv import load_dotenv
 import random
 import shutil
 import os
 import nltk
 
+load_dotenv()
+
 nltk.download('averaged_perceptron_tagger_eng')
 
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 DATA_PATH = "data/books"
 CHROMA_PATH = "chroma"
 
