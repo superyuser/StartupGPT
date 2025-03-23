@@ -1,6 +1,6 @@
 from langchain_community.document_loaders import DirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.vectorstores.chroma import Chroma
+from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from dotenv import load_dotenv
@@ -10,8 +10,12 @@ import os
 import nltk
 import argparse
 
+load_dotenv()
+print(f"API key is: {os.getenv('OPENAI_API_KEY')}")
+
 nltk.download('averaged_perceptron_tagger_eng')
 
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 DATA_PATH = "data/books"
 CHROMA_PATH = "chroma"
